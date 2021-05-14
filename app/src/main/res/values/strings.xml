@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My fagments</string>
+
+    <string-array name="name">
+        <item>apple</item>
+        <item>avocado</item>
+        <item>banana</item>
+        <item>grape</item>
+        <item>guava</item>
+        <item>mango</item>
+        <item>orange</item>
+        <item>pineapple</item>
+        <item>pomegranate</item>
+        <item>strawberry</item>
+        <item>waterlemon</item>
+    </string-array>
+
+    <string-array name="phone_number">
+        <item>this is apple</item>
+        <item>this is avocado</item>
+        <item>this is banana</item>
+        <item>this is grape</item>
+        <item>this is guava</item>
+        <item>this is mango</item>
+        <item>this is orange</item>
+        <item>this is pineapple</item>
+        <item>this is pomegranate</item>
+        <item>this is strawberry</item>
+        <item>this is waterlemon</item>
+    </string-array>
+</resources>
