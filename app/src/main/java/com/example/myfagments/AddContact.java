@@ -2,6 +2,7 @@ package com.example.myfagments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -51,7 +52,7 @@ public class AddContact extends AppCompatActivity {
         });
     }
 
-    private byte[] ImageViewToByte(ImageView img){
+    public byte[] ImageViewToByte(ImageView img){
         Bitmap bmp = null;
         ByteArrayOutputStream bos = null;
         byte[] bt = null;

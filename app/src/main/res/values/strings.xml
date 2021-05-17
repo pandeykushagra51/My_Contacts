@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My fagments</string>
+    <string name="app_name">My Contacts</string>
 
     <string-array name="name">
         <item>apple</item>

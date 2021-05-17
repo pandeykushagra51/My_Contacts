@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -58,12 +59,12 @@ public class CallFragment extends Fragment {
             while(cursor.moveToNext()){
                 byte[] image = cursor.getBlob(3);
                 Bitmap bmp=BitmapFactory.decodeByteArray(image, 0, image.length);
-                callRow.add(new CallRow(cursor.getString(1),cursor.getString(2),bmp));
+                callRow.add(new CallRow(cursor.getString(1),cursor.getString(2),bmp,cursor.getInt(0)));
             }
         }
     }
 
-
+    FragmentManager fmg=getFragmentManager();
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

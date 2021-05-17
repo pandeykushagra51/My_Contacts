@@ -9,6 +9,8 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements Communicator {
@@ -26,7 +28,14 @@ public class MainActivity extends AppCompatActivity implements Communicator {
         ftr=mng.beginTransaction();
         ftr.add(R.id.main_layout, callFragment, "main_fragment");
         ftr.commit();
+    }
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater ift=getMenuInflater();
+        ift.inflate(R.menu.option_menu,menu);
+        return true;
     }
 
     @Override
@@ -58,4 +67,5 @@ public class MainActivity extends AppCompatActivity implements Communicator {
         Intent it= new Intent(this,AddContact.class);
         startActivity(it);
     }
+
 }
